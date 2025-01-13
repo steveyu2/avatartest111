@@ -7,3 +7,5 @@ node_modules
 
 # Build files
 lib
+.next
+node_modules

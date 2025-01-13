@@ -17,14 +17,15 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 const data = [
   [style, { seed: 'John Doe' }],
-  [style, { seed: 'Jane Doe' }],
-  [style, { seed: 'Florian' }],
-  [style, { seed: 'Aneka' }],
-  [style, { seed: 'Felix' }],
+  [style, { seed: 'Jane Doe1' }],
+  [style, { seed: 'Florian2' }],
+  [style, { seed: 'Aneka3' }],
+  [style, { seed: 'Felix4' }],
 ];
 
 data.forEach((params, key) => {
   test(`Create avatar #${key}`, async () => {
+    key=params[1].seed;
     const svgPath = path.resolve(__dirname, 'static/create', `${key}.svg`);
     const jsonPath = path.resolve(__dirname, 'static/create', `${key}.json`);
 
