@@ -27,8 +27,8 @@
     "build": "tsc",
     "prepublishOnly": "npm run build",
     "test": "uvu tests",
-    "dev": "pnpm build-avatar && next dev",
-    "build2": "pnpm build-avatar && next build",
+    "dev": "next dev",
+    "build2": "next build",
     "start": "next start",
     "lint": "next lint"
   },
