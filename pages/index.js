@@ -9,7 +9,7 @@ function HomePage() {
       <input onChange={(e) => setaaa(e.target.value)} />
       <button
         onClick={() =>
-          !!vvv ? window.open(`${location.host}/create?id=${vvv}`) : null
+          !!vvv ? window.open(`${location.origin}/create?id=${vvv}`) : null
         }
       >
         生成
