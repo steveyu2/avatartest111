@@ -1,7 +1,5 @@
 import * as style from '../lib/index.js';
 import { createAvatar } from '@dicebear/core';
-import * as fs from 'fs'; 
-import * as path from 'path';
  
 
 function HomePage({id,svg}) {
