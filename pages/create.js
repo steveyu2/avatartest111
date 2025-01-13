@@ -6,7 +6,7 @@ import * as path from 'path';
 
 function HomePage({id,svg}) {
   return <div style={{width:300,margin:'0 auto'}}>
-  {!!id?<img src={`avatar/${id}.svg`} width={300} height={300}/>: "没有id"}<div dangerouslySetInnerHTML={{__html:svg}}></div>
+  {!!svg?<div dangerouslySetInnerHTML={{__html:svg}}></div>: "没有id"}
   </div>;
 }
 
