@@ -13,7 +13,6 @@
     "url": "git+https://github.com/dicebear/dicebear.git"
   },
   "license": "MIT",
-  "type": "module",
   "main": "./lib/index.js",
   "exports": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -25,15 +24,17 @@
   "scripts": {
     "test": "uvu tests",
     "dev": "npm run build-avatar && next dev",
-    "build-avatar":"cd avatar && npm i && npm run build && cd ..",
+    "build-json":"node scripts/build-json.js",
+    "build-avatar": "cd avatar && npm i && npm run build && cd ..",
     "build": "npm run build-avatar && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "devDependencies": {
     "@dicebear/core": "^9.0.0",
-    "@types/react": "19.0.6",
     "@tsconfig/recommended": "^1.0.2",
+    "@types/node": "22.10.6",
+    "@types/react": "19.0.6",
     "del-cli": "^5.0.0",
     "typescript": "^5.1.6",
     "uvu": "^0.5.6"

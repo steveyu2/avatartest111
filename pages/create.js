@@ -1,4 +1,4 @@
-import * as style from './avatar/lib/index.js';
+import * as style from '../avatar/lib/index.js';
 import { createAvatar } from '@dicebear/core';
  
 
