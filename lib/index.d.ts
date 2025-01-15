@@ -4,12 +4,12 @@
  * Plugin: https://www.figma.com/community/plugin/1005765655729342787
  */
 /*!
- * avatar_test (@dicebear/avatartest)
+ * avatar_smart (@dicebear/avatarsmart)
  *
  * Code licensed under MIT License.
  * Copyright (c) 2025 Florian Körner
  *
- * Design "avatar_test" by byd licensed under CC BY 4.0. / Remix of the original.
+ * Design "avatar_smart" by moonx licensed under CC BY 4.0. / Remix of the original.
  * License: https://creativecommons.org/licenses/by/4.0/
  */
 import type { StyleCreate, StyleMeta } from '@dicebear/core';

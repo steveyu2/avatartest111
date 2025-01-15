@@ -4,11 +4,12 @@
  * Plugin: https://www.figma.com/community/plugin/1005765655729342787
  */
 export interface Options {
+    bg?: ('10' | '11' | '05' | '06' | '07' | '08' | '09' | '04' | '03' | '01' | '02')[];
     body?: ('basic')[];
-    face?: ('circle' | 'cube' | 'bear' | 'normal' | 'smile')[];
-    head?: ('01' | '02' | '03')[];
-    clothes?: ('01' | '02' | '03')[];
-    deco?: ('01' | '02' | '03')[];
+    face?: ('02' | '01')[];
+    clothes?: ('05' | '06' | '04' | '03' | '01' | '02')[];
+    head?: ('06' | '07' | '05' | '03' | '04' | '01' | '02')[];
+    deco?: ('06' | '04' | '05' | '03' | '01' | '02')[];
 }
 export type ColorPickCollection = Record<string, string>;
 export type ComponentGroup = Record<string, ComponentGroupItem>;
