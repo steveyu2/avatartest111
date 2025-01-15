@@ -1,5 +1,5 @@
 {
-  "name": "@dicebear/avatartest",
+  "name": "@dicebear/avatarsmart",
   "version": "1.0.0",
   "description": "Avatar style for DiceBear",
   "keywords": [
@@ -23,25 +23,17 @@
     "README.md"
   ],
   "scripts": {
-    "test": "uvu tests",
-    "dev": "npm run build-avatar && next dev",
-    "build-avatar":"cd avatar && npm i && npm run build && cd ..",
-    "build": "npm run build-avatar && next build",
-    "start": "next start",
-    "lint": "next lint"
+    "prebuild": "del-cli lib",
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "uvu tests"
   },
   "devDependencies": {
     "@dicebear/core": "^9.0.0",
-    "@types/react": "19.0.6",
     "@tsconfig/recommended": "^1.0.2",
     "del-cli": "^5.0.0",
     "typescript": "^5.1.6",
     "uvu": "^0.5.6"
-  },
-  "dependencies": {
-    "next": "^15.1.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
   },
   "peerDependencies": {
     "@dicebear/core": "^9.0.0"
