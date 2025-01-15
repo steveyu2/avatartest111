@@ -24,7 +24,7 @@
   "scripts": {
     "test": "uvu tests",
     "dev": "npm run build-avatar && next dev",
-    "build-json":"node scripts/build-json.js",
+    "build-json": "node scripts/build-json.js",
     "build-avatar": "cd avatar && npm i && npm run build && cd ..",
     "build": "npm run build-avatar && next build",
     "start": "next start",
@@ -42,7 +42,8 @@
   "dependencies": {
     "next": "^15.1.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "uuid": "^11.0.5"
   },
   "peerDependencies": {
     "@dicebear/core": "^9.0.0"
