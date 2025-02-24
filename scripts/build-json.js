@@ -7,17 +7,17 @@ const { v7: uuidv4 } = require('uuid');
   const fs = require('fs');
 
   /** 用json文件数组 */
-  const jsonFile = fs.readFileSync(
-    path.resolve(__dirname, 'json.json'),
-    'utf8'
-  );
-  const data = JSON.parse(jsonFile);
+  // const jsonFile = fs.readFileSync(
+  //   path.resolve(__dirname, 'json.json'),
+  //   'utf8'
+  // );
+  // const data = JSON.parse(jsonFile);
 
   /** 用随机id生成 */
-  // const data=Array.from({length:10000}).map((v,i)=>uuidv4());
+  const data=Array.from({length:1000}).map((v,i)=>uuidv4());
 
-  data.forEach((seed) => {
-    const svgPath = path.resolve(__dirname, 'build/avatar', `${seed}.svg`);
+  data.forEach((seed,i) => {
+    const svgPath = path.resolve(__dirname, '../build/avatar', `${i}.svg`);
 
     if (false === fs.existsSync(svgPath)) {
       if (false === fs.existsSync(path.dirname(svgPath))) {

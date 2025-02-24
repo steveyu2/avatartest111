@@ -5,12 +5,12 @@
  */
 
 /*!
- * avatar_smart (@dicebear/avatarsmart)
+ * smartmoney (@dicebear/smartmoney)
  *
  * Code licensed under MIT License.
  * Copyright (c) 2025 Florian Körner
  *
- * Design "avatar_smart" by moonx licensed under CC BY 4.0. / Remix of the original.
+ * Design "smartmoney" by bydfi licensed under CC BY 4.0. / Remix of the original.
  * License: https://creativecommons.org/licenses/by/4.0/
  */
 
@@ -22,8 +22,8 @@ import { getComponents } from './utils/getComponents.js';
 import { getColors } from './utils/getColors.js';
 
 export const meta: StyleMeta = {
-  title: 'avatar_smart',
-  creator: 'moonx',
+  title: 'smartmoney',
+  creator: 'bydfi',
   license: {
     name: 'CC BY 4.0',
     url: 'https://creativecommons.org/licenses/by/4.0/',
@@ -36,11 +36,11 @@ export const create: StyleCreate<Options> = ({ prng, options }) => {
 
   return {
     attributes: {
-      viewBox: '0 0 26 26',
+      viewBox: '0 0 320 320',
       fill: 'none',
       'shape-rendering': 'auto'
     },
-    body: `${components.bg?.value(components, colors) ?? ''}${components.body?.value(components, colors) ?? ''}${components.face?.value(components, colors) ?? ''}${components.clothes?.value(components, colors) ?? ''}${components.head?.value(components, colors) ?? ''}${components.deco?.value(components, colors) ?? ''}`,
+    body: `<rect width="320" height="320" fill="white"/>${components.bg?.value(components, colors) ?? ''}${components.body?.value(components, colors) ?? ''}${components.clothes?.value(components, colors) ?? ''}${components.head?.value(components, colors) ?? ''}${components.face?.value(components, colors) ?? ''}`,
     extra: () => ({
       ...Object.entries(components).reduce<Record<string, string | undefined>>(
         (acc, [key, value]) => {

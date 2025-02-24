@@ -24,11 +24,6 @@ export function getComponents({ prng, options }: Props): ComponentPickCollection
     group: 'body',
     values: options.body,
   });
-  const faceComponent = pickComponent({
-    prng,
-    group: 'face',
-    values: options.face,
-  });
   const clothesComponent = pickComponent({
     prng,
     group: 'clothes',
@@ -39,18 +34,17 @@ export function getComponents({ prng, options }: Props): ComponentPickCollection
     group: 'head',
     values: options.head,
   });
-  const decoComponent = pickComponent({
+  const faceComponent = pickComponent({
     prng,
-    group: 'deco',
-    values: options.deco,
+    group: 'face',
+    values: options.face,
   });
 
   return {
     'bg': bgComponent,
     'body': bodyComponent,
-    'face': faceComponent,
     'clothes': clothesComponent,
     'head': headComponent,
-    'deco': decoComponent,
+    'face': faceComponent,
   }
 };

@@ -6,7 +6,6 @@
 
 export { bg } from './bg.js';
 export { body } from './body.js';
-export { face } from './face.js';
 export { clothes } from './clothes.js';
 export { head } from './head.js';
-export { deco } from './deco.js';
+export { face } from './face.js';
